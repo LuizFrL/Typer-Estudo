@@ -1,0 +1,49 @@
+#fraseEscrita{
+    font-size: 20px;
+    text-align: left;
+}
+.Texto-Digitado{
+    font-size: 20px;
+    height: 130px;
+    border: 3px solid black;
+}
+
+.borda-verde{
+    border: 3px solid rgb(31, 221, 88);
+}
+.borda-vermelha{
+    border: 3px solid rgb(235, 91, 91);
+}
+
+.finalizado{
+    background-color: lightgray;
+}
+.icone{
+    vertical-align: middle;
+}
+.placar{
+    display: none;
+}
+
+.sumir{
+    display: none;
+}
+
+body{
+    overflow: scroll;
+}
+#erro {
+    color: red;
+    display: none;
+}
+#spinner{
+    display: none;
+}
+
+#idFrase {
+    width: 50px;
+    text-align: center;
+}
+p{
+    padding: 5px;
+}

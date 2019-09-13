@@ -1,0 +1,10 @@
+$(document).ready(function () {
+    palavraFrase()
+    textoDigiLen()
+    palavraQtdFrase()
+    verificarFrase()
+    removerPlacar()
+    finalGame()
+    mostrarPlacar()
+    esconderPlacar()
+})
