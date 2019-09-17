@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="icon" href="img/typer.png" type="image/x-icon" />
+    <link href="css/libs/toastr.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <!-- Seja bem vindo ao curso de jQuery :) -->
+    <div class="container">
+        <h1 class="center">Teste Do Luiz</h1>
+
+        <h2 id="fraseEscrita" class="center">Clique no botão azul para iniciar o Game.</h2>
+        <div class="center">
+            <p id="erro">Ocorreu um erro, tente novamente</p>
+            <!-- <img src="img/spinner.gif" alt="spinner" id='spinner'>  -->
+            <div class="progress" id="spinner">
+                <div class="indeterminate"></div>
+            </div>
+
+        </div>
+        <div class="center">
+            <p>
+                <i class="small material-icons icone">description</i>
+                <span id="quantidadePalavrasFrase"></span> Palavras
+
+
+                <i class="small material-icons icone">query_builder</i>
+                <span id="Tempo">99999</span> Segundos
+
+            </p>
+
+            <p>
+                <i class="small material-icons icone">assignment_ind</i>
+                <span id="pensador-frase">None</span>
+            </P>
+            <P>
+                <i class="small material-icons icone">search</i>
+                <span id="id-frase">None</span> ID
+            </p>
+        </div>
+
+        <textarea name="Texto-Digitado" class="Texto-Digitado" cols="30" rows="10"
+            placeholder='Ao digitar, ira começar o game...'></textarea>
+
+        <div class="botoes">
+            <a class="testeFunciona btn-floating btn-large waves-effect waves-light amber" id="reiniciar-jogo"><i
+                    class="material-icons">restore</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light red accent-2" id='mostrar-placar'><i
+                    class="material-icons">keyboard_arrow_down</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light green accent-3 sumir" id='esconder-placar'><i
+                    class="material-icons">keyboard_arrow_up</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light blue ativo-para-usar" data-habilitado='1'
+                id='frase-aleatoria'><i class="material-icons">shuffle</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light red accent-2" id='fixar-frase'><i
+                    class="material-icons">attach_file</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light black" id='escolher-frase'><i
+                    class="material-icons">search</i></a>
+            <input id='idFrase' type="number" min="0" placeholder="ID">
+
+            <br><br>
+
+            <ul class="collection">
+                <li class="collection-item avatar card-panel teal grey lighten-5">
+                    <img id="photoURL" class="circle">
+                    <span class="title" id="displayName"></span>
+                    <p id="email"></p>
+                    <a id="logout" class="secondary-content btn-floating btn-large waves-effect  blue-grey lighten-2"><i
+                            class="material-icons">exit_to_app</i></a>
+            </ul>
+
+        </div>
+        <div class="center">
+            <li>
+                <span id="quantidadePalavras"></span> Palavras Digitadas
+            </li>
+            <li><span id="quantidadeCaracters"></span> Caracters Digitados</li>
+            </ul>
+        </div>
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>N° Palavras</th>
+                        <th>Qtd Erros</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+
+            </table>
+        </section>
+        <script src="//www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+        <script src="//www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/toastr.js"></script>
+        <script src="js/sortearFrase.js"></script>
+        <script src="js/fixarFrase.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/placar.js"></script>
+        <script src="js/frase.js"></script>
+        <script src="js/ducumentReady.js"></script>
+        <script src="https://unpkg.com/popper.js@1"></script>
+        <script src="https://unpkg.com/tippy.js@4"></script>
+        <script src="js/tooltip.js"></script>
+    </div>
+
+</body>
+
+</html>

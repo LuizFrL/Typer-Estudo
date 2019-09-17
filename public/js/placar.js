@@ -27,7 +27,7 @@ function NovaLinha() {
     
     var tr = $("<tr>")
 
-    var usuario = $("<td>").text($(".nome-usuario").val())
+    var usuario = $("<td>").text($("#displayName").text())
     var palavras = $("<td>").text($('#quantidadePalavras').text())
     var remover = $("<td>").append($('<a class="btn-floating waves-effect light-blue botao-remover" id="removerPlacar"><i class="material-icons">delete</i></a>'))
     var erro = $("<td>").text(contador_erro)

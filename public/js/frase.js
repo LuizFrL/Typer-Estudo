@@ -48,6 +48,7 @@ function palavraQtdFrase() {
 function palavraFrase() {
     var palavraFrase = $("#fraseEscrita").text().split(" ").length
     $("#quantidadePalavrasFrase").text(palavraFrase)
+    $(".Texto-Digitado").focus()
 }
 
 function textoDigiLen() {

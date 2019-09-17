@@ -6,8 +6,8 @@ var data_firebase = [];
 
 firebase.database().ref("frases").on('child_added', function (snapshot) {
     data_firebase.push(snapshot.val())
-
 })
+
 
 function fraseAleatoria() {
 
@@ -33,6 +33,7 @@ function trocaFrase(data) {
 
     atualizatempoInicial(data[idFrase].tempo + Math.floor(Math.random() * 10))
     palavraFrase()
+    
 
 }
 

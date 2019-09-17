@@ -51,4 +51,4 @@ function atualizatempoInicial(time){
     tempoInicial = time
 }
 
-
+$("#logout").click( () => { firebase.auth().signOut() } )
